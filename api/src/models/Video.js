@@ -8,14 +8,19 @@ class Video {
     this.canalID = canalID;
   }
 
+  // Método para simular pegar o canal associado
+  pegaCanal() {
+    return `Canal de ID: ${this.canalID}`;
+  }
+
   // Método para exibir informações do vídeo
   exibirInfo() {
-    // Lógica
+    return `${this.titulo} - ${this.descricao} (Views: ${this.quantidadeViews})`;
   }
 
   // Método para adicionar uma visualização
   adicionarView() {
-    // Lógica
+    this.quantidadeViews += 1;
   }
 }
 
