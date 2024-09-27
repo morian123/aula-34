@@ -1,7 +1,5 @@
 const { videos } = require("../mock/dados.json");
 
-const Video = require("../models/Video");
-
 class videosController {
   index(req, res) {
     try {
@@ -46,14 +44,14 @@ class videosController {
         return id;
       };
 
-      const novoVideo = new Video(
-        gerarIdUnico(),
+      const novoVideo = {
+        id: gerarIdUnico(),
         titulo,
         descricao,
         quantidadeViews,
         image,
         canalID
-      );
+      };
 
       videos.push(novoVideo);
       res.status(201).json(novoVideo);
