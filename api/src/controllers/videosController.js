@@ -36,21 +36,11 @@ class videosController {
 
   store(req, res) {
     try {
-      const { titulo, descricao, quantidadeViews, image, canalID } = req.body;
-
-      const gerarIdUnico = () => {
-        let id;
-        do {
-          id = Math.floor(Math.random() * 1000);
-        } while (videos.some((v) => v.id === id));
-        return id;
-      };
+      const { titulo, descricao, image, canalID } = req.body;
 
       const novoVideo = new Video(
-        gerarIdUnico(),
         titulo,
         descricao,
-        quantidadeViews,
         image,
         canalID
       );

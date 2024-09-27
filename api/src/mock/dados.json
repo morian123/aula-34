@@ -1,71 +1,91 @@
 {
-  "usuarios": [
+  "inscritos": [
     {
       "id": 1,
       "nome": "Brenda Verbena",
       "imagem": null,
       "email": "brenda@example.com",
-      "papel": "usuarioDono"
+      "papel": "inscrito",
+      "canaisInscrito": [1]
     },
     {
       "id": 2,
       "nome": "Adrya Leal",
       "imagem": null,
       "email": "adrya@example.com",
-      "papel": "usuarioDono"
+      "papel": "inscrito",
+      "canaisInscrito": [1]
     },
     {
       "id": 3,
       "nome": "Gabrieli Laurenço",
       "imagem": null,
       "email": "gabrieli@example.com",
-      "papel": "usuarioDono"
+      "papel": "inscrito",
+      "canaisInscrito": [1]
     },
     {
       "id": 4,
       "nome": "PrismaTech Films",
       "imagem": null,
       "email": "prismatech@example.com",
-      "papel": "usuarioDono"
+      "papel": "inscrito",
+      "canaisInscrito": [1]
     },
     {
       "id": 5,
       "nome": "Lara Cristina",
       "imagem": null,
       "email": "lara@example.com",
-      "papel": "usuarioDono"
+      "papel": "inscrito",
+      "canaisInscrito": [1]
     }
   ],
   "canais": [
     {
       "id": 1,
       "nome": "Canal de Brenda Verbena",
+      "imagem": null,
+      "email": "",
+      "papel": "canal",
       "videos": [1],
-      "dono": 1
+      "inscritos": []
     },
     {
       "id": 2,
       "nome": "Canal de Adrya Leal",
+      "imagem": null,
+      "email": "",
+      "papel": "canal",
       "videos": [2],
-      "dono": 2
+      "inscritos": []
     },
     {
       "id": 3,
       "nome": "Canal de Gabrieli Laurenço",
+      "imagem": null,
+      "email": "",
+      "papel": "canal",
       "videos": [3],
-      "dono": 3
+      "inscritos": []
     },
     {
       "id": 4,
       "nome": "Canal PrismaTech Films",
+      "imagem": null,
+      "email": "",
+      "papel": "canal",
       "videos": [4, 6],
-      "dono": 4
+      "inscritos": []
     },
     {
       "id": 5,
       "nome": "Canal de Lara Cristina",
+      "imagem": null,
+      "email": "",
+      "papel": "canal",
       "videos": [5],
-      "dono": 5
+      "inscritos": []
     }
   ],
   "videos": [
