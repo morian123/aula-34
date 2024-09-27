@@ -1,32 +1,34 @@
 class Carro {
-  constructor(modelo, cor) {
+  constructor(marca, modelo, ano) {
+    this.marca = marca;
     this.modelo = modelo;
-    this.cor = cor;
+    this.ano = ano;
   }
 
   andar() {
-    console.log(`${this.modelo} ${this.cor} está andando.`);
+    console.log(`${this.marca} ${this.modelo} do ano ${this.ano} está andando.`);
   }
 
   parar() {
-    console.log(`${this.modelo} ${this.cor} está parando.`);
+    console.log(`${this.marca} ${this.modelo} do ano ${this.ano} está parando.`);
   }
 }
 
-// Instanciando os carros
-const carroVermelho = new Carro('ModeloX', 'vermelho');
-const carroAzul = new Carro('ModeloZ', 'azul');
-const carroAmarelo = new Carro('ModeloW', 'amarelo');
+// Instanciando objetos da classe Carro
+const carro1 = new Carro('Toyota', 'Corolla', 2020);
+const carro2 = new Carro('Honda', 'Civic', 2018);
+const carro3 = new Carro('Chevrolet', 'Onix', 2021);
 
-// Utilizando os métodos das instâncias
-carroVermelho.andar();
-carroVermelho.parar();
+// Utilizando os métodos
+carro1.andar(); // "Toyota Corolla do ano 2020 está andando."
+carro1.parar(); // "Toyota Corolla do ano 2020 está parando."
 
-carroAzul.andar();
-carroAzul.parar();
+carro2.andar(); // "Honda Civic do ano 2018 está andando."
+carro2.parar(); // "Honda Civic do ano 2018 está parando."
 
-carroAmarelo.andar();
-carroAmarelo.parar();
+carro3.andar(); // "Chevrolet Onix do ano 2021 está andando."
+carro3.parar(); // "Chevrolet Onix do ano 2021 está parando."
+
 
 class CarroEsportivo extends Carro {
   constructor(marca, modelo, ano, velocidadeMaxima) {
