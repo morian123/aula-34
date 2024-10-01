@@ -19,7 +19,7 @@ class video {
     adicionar() {};
 
     atualizar(id, corpoAtualzado) {}
-    
+
     excluir(id) {}
 }
 
